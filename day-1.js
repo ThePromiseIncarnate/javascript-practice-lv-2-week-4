@@ -48,6 +48,14 @@ function createTask(description, dueDate) {
 
 // TODO: Now, you try building your own book collection with different books!
 
+const bookCollection = [];
+bookCollection.push(createBook('Hunger Games', 'Suzanne Collins'));
+bookCollection.push(createBook('The Giver', 'Lewis Lowry'));
+bookCollection.push(createBook('Wolf Children', 'Mamoru Hosoda'));
+
+for (let i = 0; i < bookCollection.length; i++) {
+    bookCollection[i].showDetails();
+}
 
 // EXERCISE 2: Managing a Task List
 // INSTRUCTIONS: Create an empty array called `taskList`.
