@@ -74,6 +74,14 @@ for (let i = 0; i < bookCollection.length; i++) {
 
 // TODO: Now, you try building your own task list and marking each task as completed!
 
+const taskList = [];
+taskList.push(createTask('Go to lunch', '2024-08-20'));
+taskList.push(createTask('Eidoloid Session', '2024-08-24'));
+taskList.push(createTask('Day of Remembrance for my Brother', '2024-08-28'));
+
+for (let i = 0; i < taskList.length; i++) {
+    taskList[i].completeTask();
+}
 
 // EXERCISE 3: Updating Book Titles
 // INSTRUCTIONS: Create an empty array called `library`.
@@ -93,6 +101,15 @@ for (let i = 0; i < bookCollection.length; i++) {
 
 // TODO: Now, you try updating the titles of your own library!
 
+const library = [];
+library.push(createBook('Hunger Games', 'Suzanne Collins'));
+library.push(createBook('The Giver', 'Lewis Lowry'));
+library.push(createBook('Wolf Children', 'Mamoru Hosoda'));
+
+for (let i = 0; i < library.length; i++) {
+    library[i].title += ' - Second Edition';
+    library[i].showDetails(); // Showing the updated title
+}
 
 // EXERCISE 4: Rescheduling Tasks
 // INSTRUCTIONS: Create an empty array called `taskList`.
