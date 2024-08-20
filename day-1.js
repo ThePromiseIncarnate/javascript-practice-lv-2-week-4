@@ -131,6 +131,17 @@ for (let i = 0; i < library.length; i++) {
 
 // TODO: Now, you try rescheduling your own tasks!
 
+const exampleTaskList = [];
+exampleTaskList.push(createTask('Eidoloid Session', '2024-08-24'));
+exampleTaskList.push(createTask('SoE Session', '2024-08-25'));
+exampleTaskList.push(createTask('Game Night', '2024-08-30'));
+
+for (let i = 0; i < exampleTaskList.length; i++) {
+    let oldDate = new Date(exampleTaskList[i].dueDate);
+    let newDate = new Date(oldDate.setDate(oldDate.getDate() + 1));
+    exampleTaskList[i].dueDate = newDate.toISOString().split('T')[0];
+    console.log(`New due date for "${exampleTaskList[i].description}": ${exampleTaskList[i].dueDate}`);
+}
 
 // EXERCISE 5: Counting Completed Tasks
 // INSTRUCTIONS: Create an empty array called `taskList`.
@@ -157,6 +168,21 @@ for (let i = 0; i < library.length; i++) {
 
 // TODO: Now, you try counting the completed tasks in your own task list!
 
+const taskList0 = [];
+taskList0.push(createTask('Go to lunch', '2024-08-20'));
+taskList0.push(createTask('SoE Session', '2024-08-25'));
+taskList0.push(createTask('Game Night', '2024-08-30'));
+
+taskList0[0].completeTask(); // Mark first task as completed
+taskList0[2].completeTask(); // Mark third task as completed
+
+let completedCount = 0;
+for (let i = 0; i < taskList0.length; i++) {
+    if (taskList0[i].completed) {
+        completedCount++;
+    }
+}
+console.log(`Number of completed tasks: ${completedCount}`);
 
 // Great job! You've completed the exercises.
 // Feel free to experiment further with the factory functions and loops to create more complex arrays and interactions.
