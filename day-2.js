@@ -26,6 +26,16 @@ let state = {};
 
 // TODO: Now, you try updating the `state` object with your own values for `name`, `email`, and `zipCode`!
 
+state.name = 'Julie Winchester';
+state.email = 'ThePromiseIncarnate@gmail.com';
+state.zipCode = '71103';
+
+console.log('State:', state);
+console.table(state);
+
+console.log('Name:', state.name);
+console.log('Email:', state.email);
+console.log('Zip Code:', state.zipCode);
 
 // EXERCISE 2: Adding More Personal Information
 // INSTRUCTIONS: Add properties `age`, `phoneNumber`, and `address` to the `state` object and assign them appropriate values.
@@ -46,6 +56,16 @@ let state = {};
 
 // TODO: Now, you try updating the `state` object with your own values for `age`, `phoneNumber`, and `address`!
 
+state.age = 25;
+state.phoneNumber = '678-7998';
+state.address = '1710 Weinstock Street, Shreveport';
+
+console.log('State:', state);
+console.table(state);
+
+console.log('Age:', state.age);
+console.log('Phone Number:', state.phoneNumber);
+console.log('Address:', state.address);
 
 // EXERCISE 3: Creating a List of Favorite Movies
 // INSTRUCTIONS: Add a property `favoriteMovies` to the `state` object that is an array of strings representing movie titles.
@@ -64,6 +84,14 @@ let state = {};
 
 // TODO: Now, you try creating your own list of favorite movies and logging them to the console!
 
+state.favoriteMovies = ['Sonic the Hedgehog 2', 'Polar Express', 'Ponyo'];
+
+console.log('State:', state);
+console.table(state.favoriteMovies);
+
+for (let i = 0; i < state.favoriteMovies.length; i++) {
+    console.log(`Movie ${i + 1}:`, state.favoriteMovies[i]);
+}
 
 // EXERCISE 4: Creating a List of Recent Purchases
 // INSTRUCTIONS: Add a property `recentPurchases` to the `state` object that is an array of numbers representing purchase amounts.
