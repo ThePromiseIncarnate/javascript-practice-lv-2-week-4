@@ -110,6 +110,14 @@ for (let i = 0; i < state.favoriteMovies.length; i++) {
 
 // TODO: Now, you try creating your own list of recent purchases and logging them to the console!
 
+state.recentPurchases = [1, 5, 20, 100];
+
+console.log('State:', state);
+console.table(state.recentPurchases);
+
+for (let i = 0; i < state.recentPurchases.length; i++) {
+    console.log(`Temperature ${i + 1}:`, state.recentPurchases[i]);
+}
 
 // EXERCISE 5: Adding Hobbies and Interests
 // INSTRUCTIONS: Add a property `hobbies` to the `state` object that is an array of strings representing different hobbies or interests.
@@ -128,6 +136,14 @@ for (let i = 0; i < state.favoriteMovies.length; i++) {
 
 // TODO: Now, you try adding your own hobbies to the `state` object and logging them to the console!
 
+state.hobbies = ['Roleplaying', 'Writing', 'Drawing'];
+
+console.log('State:', state);
+console.table(state.hobbides);
+
+for (let i = 0; i < state.hobbies.length; i++) {
+    console.log(`Skill ${i + 1}:`, state.hobbies[i]);
+}
 
 // Excellent work! You've completed the exercises.
 // Keep experimenting with the `state` object by adding more properties and interacting with them using logs and tables.
